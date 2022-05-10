@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
     <style>
@@ -16,13 +16,11 @@ h2{
 	font-weight: 700;
 	font-size: 72px;
 	line height: 72px;
-	letter-spacing: -1px;
 }
 h4{
 	font-weight: 700;
 	font-size: 48px;
 	line height: 48px;
-	letter-spacing: -.08px;
 }
 h3{
 	font-size: 60px;
@@ -53,9 +51,6 @@ li a{
     line-height: 28px;
     text-decoration: none;
 }
-li a:hover{
-    color: #006AFF;
-}
 button{
 	padding: 0px 24px;
     color: #FFFFFF;
@@ -64,47 +59,46 @@ button{
     cursor: pointer;
 }
 /*PART 1*/
-.Part1 .TitleButton{
+.header{
+padding: 48px 96px;
+}
+.header .TitleButton{
     background-color: #000000;
 }
-.Part1 .ArticleButton{
+.header .ArticleButton{
     background-color: #FC0E52;
 }
-.Part1 img{
+.header .spacing{
+	margin-top: 50px;
+}
+.header p{
+	margin-top: 150px;
+    }
+.herosection{
+padding-left: 48px 96px;
+}
+.herosection img{
 	height: auto;
 	width: 100%;
 }
-.Part1 .spacing{
-	margin-top: 50px;
+.pink{
+background: #FC0E52;
+color: #FFFFFF;
 }
-.Part1 p{
-	margin-top: 150px;
-}
-
 /*PART 2*/
-.Part2 .columnInfo{
-    padding: 50px;
+
+.Part2{
+background: rgba(244, 234, 228, 0.4);
+}
+.card{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+    padding: 48px;
     background: #FFFFFF;
     border: none;
     border-radius: 8px;
 }
-
-/*EXTRA*/
-.pinkBackground{
-    background: #FC0E52;
-    color: #FFFFFF;
-    padding-left: 48px;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    margin-top: -40px;
-}
-.pinkBackground li a{
-    color: #FFFFFF;
-}
-.pinkBackground .info3 li a:hover{
-    color: #FFFFFF;
-}
-
 /*PART 4*/
 .Part3 img{
     width: 100%;
@@ -133,52 +127,16 @@ button{
 	border:none; 
 	border-radius: 100px;
 }
-@media screen and (max-width: 800px){
-	h2{
-	font-weight: 700;
-	font-size: 36px;
-	line height: 48px;
-	letter-spacing: -1px;
-	}
-	h4{
-		font-weight: 700;
-		font-size: 36px;
-		line height: 48px;
-		letter-spacing: -.08px;
-	}
-	h3{
-		font-size: 36px;
-	    line-height: 48px;
-	    font-weight: 700;
-	}
-	.Font1{
-	font-size: 18px;
-	}
-	.Font2{
-		font-size: 18px;
-	}
-	.Font3{
-		font-size: 16px;
-	}
-	.Font4{
-		font-size: 18px;
-	}
-	.Part1 .spacing{
-	margin-top: 10px;
-	}
-	.Part1 p{
-		margin-top: 0px;
-	}
-}
+
     </style>
 
         <!-- PART 1 -->
 
-        <div class="Part1">
+        <div class="header">
             <div class="container">
                 <div class="row">
                     <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-                        <a class="navbar-brand" href="#"><img class="logo" src="JajjaLogo.png" alt="Jajja Logo"></a>
+                        <a class="navbar-brand" href="#"><img class="logo" src="JajjaLogo.png"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
@@ -200,24 +158,29 @@ button{
                                       <a href="#">Om oss</a>
                                     </li>
                                     <li class="nav-item">
-                                      <a class="kontakt" href="#"><button class="TitleButton">Kontakt</button></a>
+        							<a href="#" class="btn-dark rounded-pill text-white px-3">Kontakt</a>
                                     </li>
                               </ul>
                         </div>
                     </nav>
                 </div>
-                <div class="row">
+                </div>
+                </div>
+                <div class="herosection">
+                <div class="container">
+        <div class="row align-items-center justify-content-center gy-5">
+         <div class="col-md py-3">
+          <div class="mb-5">
+           <p class="fs-5">Hallå där 👋</p>
+           <h1>Vi driver rätt trafik till din webbplats.</h1>
+          </div>
+          <a href="#" class="link-light rounded-pill btn pink">Läs mer</a>
+         </div>
                     <div class="col-md-6 col-sm-12 spacing">
-                        <p class="Font1">Hallå där 👋 </p>
-                        <h2>Vi driver rätt trafik till din webbplats.</h2>
-                        <a class="kontakt" href="#"><button class="ArticleButton">Läs mer</button></a>
-                    </div>
-                    <div class="col-md-6 col-sm-12 spacing">
-                            <img src="JAJJA_2020_020 1.png" alt="Two women with a Balloon">
+                            <img src="JAJJA_2020_020 1.png">
                     </div>
                 </div>
             </div>
-        </div>
 
         <!-- PART 1 -->
 
@@ -231,53 +194,58 @@ button{
                         <h2>Med hjälp av SEO, SEM och SMA får du rätt trafik till din webbplats</h2>
                     </div>
                 </div>
-
                 <div class="row">
-                    <div class="col-md-4 col-sm-12 text-wrap columnInfo">
-                        <img src="search-icon.svg" alt="search icon">
-                        <h4>SEO</h4>
-                        <p class="Font2">Din målgrupp måste hitta din webbplats på Google om du ska få rätt resultat</p>
-                        <ul class="info3">
-                            <li><i class="fa-solid fa-chevron-right"></i><a href="#">Teknisk optimerad sajt</a></li>
-                            <li><i class="fa-solid fa-chevron-right"></i><a href="#">Innehåll på sajten</a></li>
-                            <li><i class="fa-solid fa-chevron-right"></i><a href="#">Länkkraft</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 text-wrap columnInfo">
-                        <img src="bag-icon.svg" alt="search icon">
-                        <h4>SEO</h4>
-                        <p class="Font2">Lönsam och effektiv annonsering med Google Ads ger dig rätt resultat</p>
-                        <ul class="info3">
-                            <li><img src=""><a href="#">Google Ads Sök</a></li>
-                            <li><img src=""><a href="#">Google Ads Display</a></li>
-                            <li><img src=""><a href="#">Goolge Ads</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 text-wrap columnInfo">
-                        <img src="text-icon.svg" alt="search icon">
-                        <h4>SEO</h4>
-                        <p class="Font2">Annonsera i sociala medier med rätt verktyg för att nå din målgrupp och få resultat</p>
-                        <ul class="info3">
-                            <li><i class="fa-solid fa-chevron-right"></i><a href="#">Facebook</a></li>
-                            <li><i class="fa-solid fa-chevron-right"></i><a href="#">Instagram</a></li>
-                            <li><i class="fa-solid fa-chevron-right"></i><a href="#">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+<div class="card">
+  <img class="card-img-top" src="...">
+  <div class="card-body">
+    <h4 class="card-title">SEO</h4>
+    <p class="Font2">Din målgrupp måste hitta din webbplats på Google om du ska få rätt resultat</p>
+    <ul class="info3">
+    <li><img src=""><a href="#">Teknisk optimerad sajt</a></li>
+    <li><img src=""><a href="#">Innehåll på sajten</a></li>
+    <li><img src=""><a href="#">Länkkraft</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class="row">
+<div class="card">
+  <img class="card-img-top" src="...">
+    <h4 class="card-title">SEM</h4>
+    <p class="Font2">Lönsam och effektiv annonsering med Google Ads ger dig rätt resultat</p>
+    <ul class="info3">
+    <li><img src=""><a href="#">Google Ads Sök</a></li>
+    <li><img src=""><a href="#">Google Ads Display</a></li>
+    <li><img src=""><a href="#">Goolge Ads</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class="row">
+<div class="card">
+  <img class="card-img-top" src="...">
+  <div class="card-body">
+    <h4 class="card-title">SMA</h4>
+    <p class="Font2">Annonsera i sociala medier med rätt verktyg för att nå din målgrupp och få resultat</p>
+    <ul class="info3">
+    <li><img src=""><a href="#">Facebook</a></li>
+    <li><img src=""><a href="#">Instagram</a></li>
+    <li><img src=""><a href="#">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
         <!-- PART 2 -->
 
         <!-- EXTRA -->
         <div class="container">
-            <div class="row pinkBackground">
+            <div class="row py-5 footer pink ">
                 <div class="col-md-12 col-sm-12">
                     <h3>Organisk och köpt trafik kompletterar varandra</h3>
                     <ul class="info3">
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="#">Så här jobbar vi</a></li>
+					<p class="d-flex align-items-center text-white fs-6">
+      <span class="me-2 bx bx-chevron-right fs-5"></span> Så här jobbar vi</p>
                     </ul>
                 </div>
             </div>
@@ -291,9 +259,9 @@ button{
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
-                        <p class="Font1">Så här jobbar vi</p>
+                        <p class="Font1">Kunder</p>
                         <h2>Ett urval av kunder som vi jobbar eller har jobbat med</h2>
-                        <p class="Font1">Läs mer om våra kunder</p>
+                        <p class="Font1">Så här jobbar vi</p>
                     </div>
                 </div>
 
