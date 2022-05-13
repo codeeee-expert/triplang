@@ -58,6 +58,12 @@ h3{
 .header{
 	padding: 48px 96px;
 }
+.header .nav1{
+	display: flex;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+}
 .herosection{
 	padding-left: 96px;
 	padding-right: 96px;
@@ -117,12 +123,11 @@ h3{
     width: 100%;
     height: auto;
 }
-.articles .space{
-	margin-right:24px;
-}
-.articles .size{
-	font-size: 18px;
-	line-height: 28px;
+.articles .nav2{
+display: flex;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
 }
 .footers{
 	background: #000;
@@ -144,7 +149,7 @@ h3{
 				<a class="navbar-brand" href="#"><img class="logo" src="JajjaLogo.png"></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 					<div class="collapse navbar-collapse text-lg-end justify-content-lg-end" id="navbarNav">
-                    <ul class="navbar-nav NavBar1">
+                    <ul class="navbar-nav nav1">
                     <li class="nav-item"><a href="#">Tjänster</a></li>
                     <li class="nav-item"><a href="#">Kunder</a></li>
                     <li class="nav-item"><a href="#">Nyheter</a></li>
@@ -319,18 +324,21 @@ h3{
                 <p class="f1">Så här jobbar vi</p>
                 <h1>Allt från Jajja!</h1>
                	</div>
+			</div>             
+			<div class="row">
+				<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+				<a class="navbar-brand" href="#"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav2">
+                    <li class="nav-item"><a href="#" class="pink rounded-pill f1">Allt</a></li>
+                    <li class="nav-item"><a href="#" class="grey rounded-pill f1">Bolaget</a></li>
+                    <li class="nav-item"><a href="#" class="grey rounded-pill f1">Kunskap</a></li>
+                    <li class="nav-item"><a href="#" class="grey rounded-pill f1">Kunder</a></li>
+                    </ul>
+                    </div>
+				</nav>
 			</div>
-			<nav class="navbar navbar-expand-lg">
-  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    				<div class="navbar-nav">
-      				<a class="nav-item nav-link link-light rounded-pill btn pink space size" href="#">Allt</a>
-      				<a class="nav-item nav-link link-light rounded-pill btn grey space size" href="#">Bolaget</a>
-      				<a class="nav-item nav-link link-light rounded-pill btn grey space size" href="#">Kunskap</a>
-      				<a class="nav-item nav-link link-light rounded-pill btn grey space size" href="#">Kunder</a>
-    				</div>
-  				</div>
-			</nav>
 			<div class="row mt-4 gy-3 row-cols-1 row-cols-lg-3">
             	<div class="card">
   				<img class="card-img-top" src="JAJJA_2020_016 1.png">
