@@ -1,440 +1,423 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    </head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
     <body>
-    <style>
-    *{
-	font-family: "Roboto", sans-serif;;
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     
+*{
+	font-family: "Roboto", sans-serif;;
 }
 
-h2{
-	font-weight: 700;
-	font-size: 72px;
-	line height: 72px;
+.pink{
+	background: #FC0E52;
+	color: #FFF;
 }
-h4{
-	font-weight: 700;
-	font-size: 48px;
-	line height: 48px;
+.grey{
+	background: #F5F5F6;
+	color: #000;
 }
-h3{
-	font-size: 60px;
-    line-height: 60px;
-    font-weight: 700;
-}
-.Font1{
-	font-size: 18px;
-}
-.Font2{
-	font-size: 20px;
-}
-.Font3{
+.f0{
 	font-size: 16px;
 }
-.Font4{
+.f1{
+	font-size: 18px;
+}
+.f2{
+	font-size: 20px;
+}
+.f3{
 	font-size: 24px;
 }
-li{
-	display: block;
-}
 li a{
+	padding: 0px 24px;
+    gap: 10px;
     display: inline-block;
-    padding-left: 15px;
-    color: #000000;
+    color: #000;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     text-decoration: none;
 }
-button{
-	padding: 0px 24px;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
+h1{
+	font-weight: 700;
+	font-size: 72px;
 }
-/*PART 1*/
+h2{
+	font-size: 60px;
+    font-weight: 700;
+}
+h3{
+	font-weight: 700;
+	font-size: 48px;
+}
 .header{
-padding: 48px 96px;
+	padding: 48px 96px;
 }
-.header .TitleButton{
-    background-color: #000000;
-}
-.header .ArticleButton{
-    background-color: #FC0E52;
-}
-.header .spacing{
-	margin-top: 50px;
-}
-.header p{
-	margin-top: 150px;
-    }
 .herosection{
-padding-left: 48px 96px;
+	padding-left: 96px;
+	padding-right: 96px;
 }
 .herosection img{
 	height: auto;
 	width: 100%;
 }
-.pink{
-background: #FC0E52;
-color: #FFFFFF;
-}
-/*PART 2*/
-
-.Part2{
-background: rgba(244, 234, 228, 0.4);
+.servicesection{
+	padding-top: 96px;
+	padding-right: 96px;
+	padding-left: 96px;
+	background: rgba(244, 234, 228, 0.4);
 }
 .card{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-    padding: 48px;
-    background: #FFFFFF;
-    border: none;
-    border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 48px;
+	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+	border-radius: 8px;
+	border: none;
 }
-/*PART 4*/
-.Part3 img{
+.base2{
+	padding-left: 96px;
+	padding-rigth: 96px;
+	background: #FC0E52;
+	color: #FFF;
+}
+.customers{
+	padding: 96px;
+	gap: 48px;
+}
+.customers img{
     width: 100%;
     height: auto;
 }
-
-/*PART 4*/
-.Part4 img{
+.careers{
+	background: #F4EAE466;
+}
+.careers .rightcol{
+	padding: 96px;
+	gap: 48px;
+}
+.careers img{
     width: 100%;
     height: auto;
 }
-
-/*PART 5*/
-.Part5 img{
+.articles{
+	padding: 96px;
+	gap: 48px;
+}
+.articles .paddings{
+	padding: 32px;
+}
+.articles img{
     width: 100%;
     height: auto;
 }
-
-/*PART 6*/
-.Part6{
-    background: #000000;
-    color: #FFFFFF;
-    padding: 96px;
+.articles .space{
+	margin-right:24px;
 }
-.Part6 img{
-	border:none; 
-	border-radius: 100px;
+.articles .size{
+	font-size: 18px;
+	line-height: 28px;
 }
+.footers{
+	background: #000;
+	color: #FFF;
+	padding: 96px;
+}
+.footers img{
+	width: 100%;
+}
+.footers .paddings{
+	padding-top: 64px;
+}
+</style>
 
-    </style>
-
-        <!-- PART 1 -->
-
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-                        <a class="navbar-brand" href="#"><img class="logo" src="JajjaLogo.png"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse text-lg-end justify-content-lg-end" id="navbarNav">
-                              <ul class="navbar-nav NavBar1">
-                                    <li class="nav-item">
-                                      <a href="#">Tjänster</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a href="#">Kunder</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a href="#">Nyheter</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a href="#">Karriär</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a href="#">Om oss</a>
-                                    </li>
-                                    <li class="nav-item">
-        							<a href="#" class="btn-dark rounded-pill text-white px-3">Kontakt</a>
-                                    </li>
-                              </ul>
-                        </div>
-                    </nav>
-                </div>
-                </div>
-                </div>
-                <div class="herosection">
-                <div class="container">
-        <div class="row align-items-center justify-content-center gy-5">
-         <div class="col-md py-3">
-          <div class="mb-5">
-           <p class="fs-5">Hallå där 👋</p>
-           <h1>Vi driver rätt trafik till din webbplats.</h1>
-          </div>
-          <a href="#" class="link-light rounded-pill btn pink">Läs mer</a>
-         </div>
-                    <div class="col-md-6 col-sm-12 spacing">
-                            <img src="JAJJA_2020_020 1.png">
-                    </div>
-                </div>
-            </div>
-
-        <!-- PART 1 -->
-
-        <!-- PART 2 -->
-
-        <div class="Part2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <p class="Font1">Så här jobbar vi</p>
-                        <h2>Med hjälp av SEO, SEM och SMA får du rätt trafik till din webbplats</h2>
-                    </div>
-                </div>
-                <div class="row">
-<div class="card">
-  <img class="card-img-top" src="...">
-  <div class="card-body">
-    <h4 class="card-title">SEO</h4>
-    <p class="Font2">Din målgrupp måste hitta din webbplats på Google om du ska få rätt resultat</p>
-    <ul class="info3">
-    <li><img src=""><a href="#">Teknisk optimerad sajt</a></li>
-    <li><img src=""><a href="#">Innehåll på sajten</a></li>
-    <li><img src=""><a href="#">Länkkraft</a></li>
-    </ul>
-  </div>
-</div>
-</div>
-<div class="row">
-<div class="card">
-  <img class="card-img-top" src="...">
-    <h4 class="card-title">SEM</h4>
-    <p class="Font2">Lönsam och effektiv annonsering med Google Ads ger dig rätt resultat</p>
-    <ul class="info3">
-    <li><img src=""><a href="#">Google Ads Sök</a></li>
-    <li><img src=""><a href="#">Google Ads Display</a></li>
-    <li><img src=""><a href="#">Goolge Ads</a></li>
-    </ul>
-  </div>
-</div>
-</div>
-<div class="row">
-<div class="card">
-  <img class="card-img-top" src="...">
-  <div class="card-body">
-    <h4 class="card-title">SMA</h4>
-    <p class="Font2">Annonsera i sociala medier med rätt verktyg för att nå din målgrupp och få resultat</p>
-    <ul class="info3">
-    <li><img src=""><a href="#">Facebook</a></li>
-    <li><img src=""><a href="#">Instagram</a></li>
-    <li><img src=""><a href="#">LinkedIn</a></li>
-    </ul>
-  </div>
-</div>
-</div>
-</div>
-        <!-- PART 2 -->
-
-        <!-- EXTRA -->
-        <div class="container">
-            <div class="row py-5 footer pink ">
-                <div class="col-md-12 col-sm-12">
-                    <h3>Organisk och köpt trafik kompletterar varandra</h3>
-                    <ul class="info3">
-					<p class="d-flex align-items-center text-white fs-6">
-      <span class="me-2 bx bx-chevron-right fs-5"></span> Så här jobbar vi</p>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+				<a class="navbar-brand" href="#"><img class="logo" src="JajjaLogo.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse text-lg-end justify-content-lg-end" id="navbarNav">
+                    <ul class="navbar-nav NavBar1">
+                    <li class="nav-item"><a href="#">Tjänster</a></li>
+                    <li class="nav-item"><a href="#">Kunder</a></li>
+                    <li class="nav-item"><a href="#">Nyheter</a></li>
+                    <li class="nav-item"><a href="#">Karriär</a></li>
+                    <li class="nav-item"><a href="#">Om oss</a></li>
+                    <li class="nav-item"><a href="#" class="btn-dark rounded-pill text-white">Kontakt</a></li>
                     </ul>
+                    </div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="herosection">
+		<div class="container">
+        	<div class="row align-items-center justify-content-center gy-5">
+        		<div class="col-md py-3">
+            		<div class="mb-5">
+          			<p class="f1">Hallå där 👋</p>
+           			<h1>Vi driver rätt trafik till din webbplats.</h1>
+          			</div>
+          		<a href="#" class="link-light rounded-pill btn pink">Läs mer</a>
+         		</div>
+                <div class="col-md-6 col-sm-12 spacing">
+                <img src="JAJJA_2020_020 1.png">
+                </div>
+            </div>
+		</div>
+	</div>
+	<div class="servicesection">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+				<p class="f1">Så här jobbar vi</p>
+                <h1>Med hjälp av SEO, SEM och SMA får du rätt trafik till din webbplats</h1>
+                </div>
+			</div>
+            <div class="row">
+				<div class="card-area">
+                	<div class="container card-list">
+                    	<div class="row g-4">
+                        	<div class="col-md col-sm text-wrap">
+                            	<div class="card">
+                                	<div class="card-img text-justify">
+                                    <img src="search-icon.svg">
+                                	</div>
+                                	<div class="card-body text-justify">
+                                    <h3 class="card-title">SEO</h3>
+                                    <p class="card-text1 text-secondary">Din målgrupp måste hitta din webbplats på Google om du ska få rätt resultat</p>
+                                    	<div class="row">
+            							<p class="d-flex align-items-center f1">
+            							<img src="Icon.png">&nbsp; Teknisk optimerad sajt</p>
+            							<p class="d-flex align-items-center f1">
+            							<img src="Icon.png">&nbsp; Innehåll på sajten</p>
+            							<p class="d-flex align-items-center f1">
+            							<img src="Icon.png">&nbsp; Länkkraft</p>
+           								</div>
+                                	</div>
+                            	</div>
+                        	</div>
+                        	<div class="col-md col-sm text-wrap">
+                        		<div class="card">
+                            		<div class="card-img text-justify">
+                                	<img src="bag-icon.svg">
+                                	</div>
+                                	<div class="card-body text-justify">
+                                	<h3 class="card-title">SEM</h3>
+                                	<p class="card-text1 text-secondary">Lönsam och effektiv annonsering med Google Ads ger dig rätt resultat</p>
+                                		<div class="row">
+                                        <p class="d-flex align-items-center f1">
+                                        <img src="Icon.png">&nbsp; Google Ads Sök</p>
+                                        <p class="d-flex align-items-center f1">
+                                        <img src="Icon.png">&nbsp; Google Ads Display</p>
+                                        <p class="d-flex align-items-center f1">
+                                        <img src="Icon.png">&nbsp; Google Ads Shopping</p>
+                                        </div>
+                            		</div>
+                        		</div>
+                   			</div>
+                    		<div class="col-md col-sm text-wrap">
+                    			<div class="card">
+                        			<div class="card-img text-justify">
+                            		<img src="text-icon.svg">
+                                	</div>
+                                	<div class="card-body text-justify">
+                                	<h3 class="card-title">SMA</h3>
+                                	<p class="card-text1 text-secondary">Annonsera i sociala medier med rätt verktyg för att nå din målgrupp och få resultat</p>
+                                		<div class="row">
+                                        <p class="d-flex align-items-center f1">
+                                        <img src="Icon.png">&nbsp; Facebook</p>
+                                        <p class="d-flex align-items-center f1">
+                                        <img src="Icon.png">&nbsp; Instagram</p>
+                                        <p class="d-flex align-items-center f1">
+                                        <img src="Icon.png">&nbsp; LinkedIn</p>
+                                        </div>
+                            		</div>
+                        		</div>
+                    		</div>
+                		</div>
+            		</div>
+        		</div>
+    		</div>
+		</div>
+	</div>
+	<div class="base2">
+        <div class="container">
+            <div class="row py-5 footer">
+                <div class="col-md-12 col-sm-12">
+                <h2>Organisk och köpt trafik kompletterar varandra</h2>
+                <ul class="f1">
+				<p class="d-flex align-items-center text-white f1">
+      			<span class="me-2 bx bx-chevron-right fs-5"></span> Så här jobbar vi</p>
+                </ul>
                 </div>
             </div>
         </div>
-
-        <!-- EXTRA -->
-
-        <!-- PART 3 -->
-
-        <div class="Part3">
+	</div>
+	<div class="customers">
+		<div class="container">
+        	<div class="row">
+            	<div class="col-md-12 col-sm-12">
+                <p class="f1">Kunder</p>
+                <h1>Ett urval av kunder som vi jobbar eller har jobbat med</h1>
+                <p class="f1">Så här jobbar vi</p>
+                </div>
+            </div>
+			<div class="row">
+            	<div class="col-6 col-md-3">
+                	<img src="google.png">
+                </div>
+                <div class="col-6 col-md-3">
+                	<img src="netflix.png">
+                </div>
+                <div class="col-6 col-md-3">
+                	<img src="spotify.png">
+                </div>
+                <div class="col-6 col-md-3">
+                	<img src="revolut.png">
+                </div>
+                <div class="col-6 col-md-3">
+                	<img src="airbnb.png">
+                </div>
+                <div class="col-6 col-md-3">
+                	<img src="uber.png">
+                </div>
+                <div class="col-6 col-md-3">
+                	<img src="hnm.png">
+                </div>
+                <div class="col-6 col-md-3">
+                	<img src="fb.png">
+                </div>
+            </div>
+        </div>
+	</div>
+	<div class="careers">
+		<div class="container">
+        	<div class="row">
+            	<div class="col-md-6 col-sm-12">
+                <img src="JAJJA_2020_014 1.png">
+                </div>
+                <div class="col-md-6 col-sm-12 rightcol">
+                <p class="f1">Häng med!</p>
+                <h1>Väx och må bra med oss</h1>
+                <p class="f2">Vi vill att alla människor och företag ska blomstra. Vår ambition är att alla som jobbar på Jajja ska må bra, utvecklas och lyckas. Samma saker gäller alla som vi kommer i kontakt med. Vi blir riktigt lyckliga av att vara med och hjälpa våra kunder att växa.</p>
+                </div>
+            </div>
+        </div>
+	</div>
+	<div class="articles">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-12 col-sm-12">
+                <p class="f1">Så här jobbar vi</p>
+                <h1>Allt från Jajja!</h1>
+               	</div>
+			</div>
+			<nav class="navbar navbar-expand-lg">
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    				<div class="navbar-nav">
+      				<a class="nav-item nav-link link-light rounded-pill btn pink space size" href="#">Allt</a>
+      				<a class="nav-item nav-link link-light rounded-pill btn grey space size" href="#">Bolaget</a>
+      				<a class="nav-item nav-link link-light rounded-pill btn grey space size" href="#">Kunskap</a>
+      				<a class="nav-item nav-link link-light rounded-pill btn grey space size" href="#">Kunder</a>
+    				</div>
+  				</div>
+			</nav>
+			<div class="row mt-4 gy-3 row-cols-1 row-cols-lg-3">
+            	<div class="card">
+  				<img class="card-img-top" src="JAJJA_2020_016 1.png">
+  					<div class="card-body">
+     				<p class="f0">Bolaget</p>
+                    <h3 class="f3">Möt vårt produktions team</h3>
+                    <p class="f1">Donec massa libero, condimentum pretium venenatis sit amet.Integer sit amet luctus.</p>
+					</div>
+				</div>
+                <div class="card">
+  				<img class="card-img-top" src="JAJJA_2020_016 1.png">
+  					<div class="card-body">
+     				<p class="f0">Bolaget</p>
+                    <h3 class="f3">Möt vårt produktions team</h3>
+                    <p class="f1">Donec massa libero, condimentum pretium venenatis sit amet.Integer sit amet luctus.</p>
+  					</div>
+				</div>
+                <div class="card">
+  				<img class="card-img-top" src="JAJJA_2020_016 1.png">
+  					<div class="card-body">
+     				<p class="f0">Bolaget</p>
+                    <h3 class="f3">Möt vårt produktions team</h3>
+                    <p class="f1">Donec massa libero, condimentum pretium venenatis sit amet.Integer sit amet luctus.</p>
+  					</div>
+				</div>
+                <div class="card">
+  				<img class="card-img-top" src="JAJJA_2020_016 1.png">
+  					<div class="card-body">
+     				<p class="f0">Bolaget</p>
+                    <h3 class="f3">Möt vårt produktions team</h3>
+                    <p class="f1">Donec massa libero, condimentum pretium venenatis sit amet.Integer sit amet luctus.</p>
+  					</div>
+				</div>
+                <div class="card">
+  				<img class="card-img-top" src="JAJJA_2020_016 1.png">
+  					<div class="card-body">
+     				<p class="f0">Bolaget</p>
+                    <h3 class="f3">Möt vårt produktions team</h3>
+                    <p class="f1">Donec massa libero, condimentum pretium venenatis sit amet.Integer sit amet luctus.</p>
+  					</div>
+				</div>
+                <div class="card">
+  				<img class="card-img-top" src="JAJJA_2020_016 1.png">
+  					<div class="card-body">
+     					<p class="f0">Bolaget</p>
+                        <h3 class="f3">Möt vårt produktions team</h3>
+                        <p class="f1">Donec massa libero, condimentum pretium venenatis sit amet.Integer sit amet luctus.</p>
+  						</div>
+					</div>
+ 				</div>
+      		</div>
+ 		</div>
+		<div class="footers">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <p class="Font1">Kunder</p>
-                        <h2>Ett urval av kunder som vi jobbar eller har jobbat med</h2>
-                        <p class="Font1">Så här jobbar vi</p>
+                    <div class="col-md-3 col-sm-12">
+                    <img src="Image 1gb.png">
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                    <h1>Vill du ha rätt trafik till din webbplats?</h1>
+                    <p class="f4">Kontakta mig på gunnar.bark@jajja.com eller 0730-28 98 99</p>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <img src="Google.png" alt="Google">
+				<div class="row paddings">
+                    <div class="col-md col-sm">
+                    <p class="f1">Stockholm<br><br>Vasagatan 28<br>
+111 20 Stockholm</p>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img src="Netflix.png" alt="Netflix">
+					<div class="col-md col-sm">
+                    <p class="f1">Karlstad<br><br>Tynäsgatan 10<br>
+652 16 Karlstad</p>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img src="Spotify.png" alt="Spotify">
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img src="Revolut.png" alt="Revolut">
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img src="Airbnb.png" alt="Airbnb">
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img src="Uber.png" alt="Uber">
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img src="HnM.png" alt="H&M">
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img src="Facebook.png" alt="Facebook">
+					<div class="col-md col-sm">
+                    <p class="f1">Dubai<br><br>Tynäsgatan 10<br>
+652 16 Karlstad</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- PART 3 -->
+				<hr>
+                <div class="row paddings">
+                    <div class="col-md col-sm">
+                    <p class="f0">&copy; 2021 Jajja Media Group AB<br>Den här sidan innehåller cookies.</p>
+                    </div>
+				</div>
+			</div>
+		</div>
 
-        <!-- PART 4 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-        <div class="Part4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <img src="JAJJA_2020_014 1.png" alt="Meeting">
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <p class="Font1">Häng med!</p>
-                        <h2>Väx och må bra med oss</h2>
-                        <p class="Font2">Vi vill att alla människor och företag ska blomstra. Vår ambition är att alla som jobbar på Jajja ska må bra, utvecklas och lyckas. Samma saker gäller alla som vi kommer i kontakt med. Vi blir riktigt lyckliga av att vara med och hjälpa våra kunder att växa.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- PART 4 -->
-
-        <!-- PART 5 -->
-
-        <div class="Part5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <p class="Font1">Så här jobbar vi</p>
-                        <h2>Allt från Jajja!</h2>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <ul>
-                            <li><a href="#">Allt</a></li>
-                            <li><a href="#">Bolaget</a></li>
-                            <li><a href="#">Kunskap</a></li>
-                            <li><a href="#">Kunder</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                        <figure class="figure">
-                            <img src="JAJJA_2020_016 1.png" alt="Group Meeting" class="Picture3">
-                            <p class="Font3">Bolaget</p>
-                            <h5 class="Font4">Möt vårt produktions team</h5>
-                             <p class="Font1">Donec massa libero, condimentum pretium venenatis sit amet.Integer sit amet luctus.</p>
-                        </figure>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <figure class="figure">
-                            <img src="JAJJA_2020_001 2.png" alt="Session 1" class="Picture3">
-                            <p class="Font3">Bolaget</p>
-                            <h5 class="Font4">Möt vårt produktions team</h5>
-                            <p class="Font1">Donec massa libero, condimentum pretium venenatis sit amet.Integer sit amet luctus.</p>
-                        </figure>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <figure class="figure">
-                            <img src="JAJJA_2020_002 2.png" alt="Session 2" class="Picture3">
-                            <p class="Font3">Bolaget</p>
-                            <h5 class="Font4">Möt vårt produktions team</h5>
-                            <p class="Font1">Donec massa libero, condimentum pretium venenatis sit amet.Integer sit amet luctus.</p>
-                        </figure>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <figure class="figure">
-                            <img src="JAJJA_2020_016 1.png" alt="Group Meeting" class="Picture3">
-                            <p class="Font3">Bolaget</p>
-                            <h5 class="Font4">Möt vårt produktions team</h5>
-                             <p class="Font1">Donec massa libero, condimentum pretium venenatis sit amet.Integer sit amet luctus.</p>
-                        </figure>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <figure class="figure">
-                            <img src="JAJJA_2020_001 2.png" alt="Session 1" class="Picture3">
-                            <p class="Font3">Bolaget</p>
-                            <h5 class="Font4">Möt vårt produktions team</h5>
-                            <p class="Font1">Donec massa libero, condimentum pretium venenatis sit amet.Integer sit amet luctus.</p>
-                        </figure>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <figure class="figure">
-                            <img src="JAJJA_2020_002 2.png" alt="Session 2" class="Picture3">
-                            <p class="Font3">Bolaget</p>
-                            <h5 class="Font4">Möt vårt produktions team</h5>
-                            <p class="Font1">Donec massa libero, condimentum pretium venenatis sit amet.Integer sit amet luctus.</p>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- PART 5 -->
-
-        <!-- PART 6 -->
-
-        <div class="Part6">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 col-sm-12">
-                        <img src="Image 1gb.png" alt="The Owner Picture">
-                    </div>
-                    <div class="col-md-5 col-sm-12">
-                        <h2>Vill du ha rätt trafik till din webbplats?</h2>
-                        <p class="Font4">Kontakta mig på gunnar.bark@jajja.com eller 0730-28 98 99 </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4 col-sm-5">
-                        <p class="Font1">Stockholm</p>
-                        <pre class="Font1">Vasagatan 28
-111 20 Stockholm</pre>
-                    </div>
-
-                    <div class="col-md-4 col-sm-5">
-                        <p class="Font1">Karlstad</p>
-                        <pre class="Font1">Tynäsgatan 10
-652 16 Karlstad</pre>
-                    </div>
-
-                    <div class="col-md-4 col-sm-5">
-                        <p class="Font1">Dubai</p>
-                        <pre class="Font1">Tynäsgatan 10
-652 16 Karlstad</pre>
-                    </div>
-                </div>
-
-                <hr>
-                <div class="row" style="margin: 64px 0px;">
-                    <div class="col-md-12 col-sm-12">
-                        <p class="Font3">© 2021 Jajja Media Group AB<br>Den här sidan innehåller cookies.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- PART 6 -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    </body>
+</body>
 </html>
